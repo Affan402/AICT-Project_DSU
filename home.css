@@ -1,0 +1,165 @@
+/* General Styles for Main Section */
+.promo-header, .header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.promo-header h4, .header h4 {
+    font-size: 21px;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.promo-header h1, .header h1 {
+    font-size: 37px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Promotion Container Styling */
+.promo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(408px, 1fr));
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.promo-item, .promo-offer {
+    /* border: 2px solid red; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.promo-offer {
+    border: 2px solid red;
+    padding: 5px;
+    width: 40%;
+    justify-content: center;
+    margin-left: 140px;
+    margin-top: 0px;
+}
+
+.promo-item:hover, .promo-offer:hover {
+    transform: scale(1.05);
+}
+
+.promo-offer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffd700;
+}
+
+.promo-offer h2 {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.promo-offer p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.promo-code {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.promo-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.promo-item a{
+    text-decoration: none;
+}
+
+.promo-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.promo-details h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.promo-details p {
+    font-size: 18px;
+    color: #555;
+}
+
+.promo-price-old {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.promo-price-new {
+    color: #333;
+    font-weight: bold;
+}
+.header {
+    padding: 0;
+    margin-top: 20px;
+    border-top: 5px gray;
+    /* border: 2px solid red; */
+}
+
+/* Product Grid Styling */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    margin-bottom: 60px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}

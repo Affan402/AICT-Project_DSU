@@ -1,0 +1,79 @@
+section {
+    /* border: 2px red solid; */
+    padding: 10px 0;
+    margin: 0;
+    margin-top: auto;
+}
+
+.collection-container {
+    /* border: 2px rgb(0, 157, 255) solid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.collection {
+    /* border: 2px rgb(238, 255, 0) solid; */
+    margin: 20px auto;
+    padding: 30px auto;
+}
+
+.image-collection {
+    position: relative;
+    overflow: hidden; /* Ensures the overlay stays within the image bounds */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.image-collection img {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.pricing {
+    /* border: 2px red solid; */
+    margin: auto;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.price {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+
+}
+.collection a {
+    text-decoration: none;
+}
+
+.image-collection img {
+    width: 350px;
+    height: 350px;
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.image-collection:hover img {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
+.image-collection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle overlay color */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+}
+
+.image-collection:hover::after {
+    opacity: 1; /* Shows overlay on hover */
+}

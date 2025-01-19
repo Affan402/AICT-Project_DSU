@@ -1,0 +1,168 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    background-color: #fff; /* Background color to ensure it's visible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for separation */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+.left img {
+    /* border: red solid 2px; */
+    margin-left: 60px;
+    width: 150px;
+    height: auto;
+}
+.head {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+}
+.mid {
+    display: flex;       
+    gap: 30px;
+}
+.mid a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-weight: 500;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 1.5rem;
+    
+}
+.navbar li a{
+    padding: 36px 23px;
+    text-decoration: none;
+    color: black;
+} 
+.right {
+    display: flex;
+    gap: 20px;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+}
+.icon-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ebeaea86;
+    padding: 20px 0;
+    color: #333;
+    margin-top: auto;
+}
+
+.footer-container {
+    /* border: 2px red solid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    /* border: 2px red solid; */
+    text-align: left;
+}
+
+.logo-section {
+    text-align: center;
+}
+
+.logo-section img {
+    width: 180px;
+    margin-bottom: -30px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #00000095;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+ 
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+.payment-icons {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+}
+
+html, body {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
