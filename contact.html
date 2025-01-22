@@ -120,7 +120,12 @@
             <p>&copy; 2025 Furrion. All rights reserved.</p>
         </div>
     </footer>
-
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        alert('Your Form has been submitted, our team will contact you soon');
+    });
+</script>
 </body>
 
 </html>
