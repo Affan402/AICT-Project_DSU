@@ -42,6 +42,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
     // If valid, redirect to home page
     if (isValid) {
-        window.location.href = 'index.html'; // Change this to your home page URL
+        window.location.href = 'https://affan402.github.io/AICT-Project_DSU/index.html'; // Change this to your home page URL
     }
 });
