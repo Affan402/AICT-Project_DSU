@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Placed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+#p1 {
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+#p1 h1 {
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#p1 h2 {
+    font-size: 1.8rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#p1 h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#p1 button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#p1 button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    width: 60px;
+    height: auto;
+}
+
+.head {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+}
+
+.mid {
+    display: flex;
+    gap: 30px;
+}
+
+.mid a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.navbar li a {
+    padding: 36px 23px;
+    text-decoration: none;
+    color: black;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #ebeaea86;
+    padding: 20px 0;
+    color: #333;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+.logo-section {
+    text-align: center;
+}
+
+.logo-section img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #00000095;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+.payment-icons {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+}
+
+#textcolor {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#textcolor h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#textcolor h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="logo.webp" alt="">
+            <a href="/" class="head">
+            </a>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/men.html">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="/collection.html">Collection</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="/cart" class="icon-link">
+                <img src="logo-icons/shopping-cart.png" alt="Cart" class="icon">
+            </a>
+            <a href="/register" class="icon-link">
+                <img src="logo-icons/enter.png" alt="Register" class="icon">
+            </a>
+        </div>
+    </header>
+
+    <div id="p1">
+        <h1>Order Placed Successfully!</h1>
+        <h2>Thank you for shopping with us.</h2>
+        <h3>Shop for more than <strong>$600</strong> and get an exciting discount!</h3>
+        <button onclick="window.location.href='index.html'">Continue Shopping</button>
+    </div>
+
+    <!------------ FOOTER ----------->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <img src="logo_main.webp" alt="logo">
+                <h2>Furrion</h2>
+                <p>StepUp - Elevate Your Style</p>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">Email Us</a></li>
+                    <li><a href="#">Furrion@gmail.com</a></li>
+                    <li><a href="#">021-32323xx3</a></li>
+                    <li><a href="#">Mon-Sat 12:00 TO 22:00</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About Momentum</h3>
+                <ul>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Top Categories</h3>
+                <ul>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Womens Shoes</a></li>
+                    <li><a href="#">Mens sandals</a></li>
+                    <li><a href="#">Men Shoes</a></li>
+                    <li><a href="#">Kids Shoes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-pay">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <img src="facebook.jpg" alt="Facebook">
+                    <img src="instaggram.png" alt="Instagram">
+                    <img src="twitter.png" alt="Twitter">
+                    <img src="linkedin.jpg" alt="LinkedIn">
+                </div>
+                <h3>Payment Methods</h3>
+                <img class="payment-icons" src="https://cdn.shopify.com/s/files/1/0733/3432/5537/files/online-payment.png?v=1705494638" alt="Payment Methods">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Furrion. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
