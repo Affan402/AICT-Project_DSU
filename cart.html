@@ -135,39 +135,7 @@
         <form action="https://affan402.github.io/AICT-Project_DSU/orderplace.html">
             <button id="button">PLACE ORDER</button>
         </form>
-    </main>     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const GST_RATE = 0.10; // 10% GST
-            const DELIVERY_FEE = 10.00;
-
-            function updateTotals() {
-                let total = 0;
-
-                document.querySelectorAll('#table tr[data-price]').forEach(row => {
-                    const price = parseFloat(row.getAttribute('data-price'));
-                    const quantity = parseInt(row.querySelector('.quantity').value);
-                    const rowTotal = price * quantity;
-
-                    row.querySelector('.price').textContent = `$${rowTotal.toFixed(2)}`;
-                    total += rowTotal;
-                });
-
-                const gst = total * GST_RATE;
-                const subtotal = total + gst + DELIVERY_FEE;
-
-                document.getElementById('total-price').textContent = `$${total.toFixed(2)}`;
-                document.getElementById('gst').textContent = `$${gst.toFixed(2)}`;
-                document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
-            }
-
-            document.querySelectorAll('.quantity').forEach(input => {
-                input.addEventListener('input', updateTotals);
-            });
-
-            updateTotals();
-        });
-    </script> 
+    </main>      
     <footer>
         <div class="footer-container">
             <div class="footer-section logo-section">
